@@ -29,8 +29,10 @@ yarn-error.log*
 .vscode/
 
 # Local databases and SQLite artifacts
+data/
 *.sqlite
 *.sqlite3
 *.db
 *.db-journal
-
+*.db-wal
+*.db-shm

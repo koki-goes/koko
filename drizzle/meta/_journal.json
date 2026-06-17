@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1781622198693,
+      "tag": "0000_medical_maximus",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1781631575536,
+      "tag": "0001_solid_nemesis",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1781636997803,
+      "tag": "0002_windy_maximus",
+      "breakpoints": true
+    }
+  ]
+}

@@ -35,8 +35,14 @@ For example, `koko memo "read book" --tag "study"` is registered in `cli/program
 
 Command files should not write raw SQL or import Drizzle tables directly. Database operations should go through `db/repository.ts`.
 
-This keeps command files small and makes future changes safer. If the schema changes, most command code should not need to change.
+This keeps command files small. If the schema changes, most command code should not need to change.
 
-## Current MVP Scope
+## Current Commands
 
-The current MVP includes `memo`, `journal`, `task`, `tag`, and `brief`. Task completion, `reminder`, GUI, web sync, and AI features are intentionally out of scope for now.
+The current CLI registers these commands:
+
+- `memo`
+- `journal`
+- `task`
+- `tag`
+- `brief`

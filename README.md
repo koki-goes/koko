@@ -2,7 +2,7 @@
 
 `koko` is a local-first CLI for quickly capturing memos, journals, and tasks from the terminal.
 
-This repository is the `v0` implementation of the MVP. It focuses on fast capture, simple listing, tag-based filtering, and a morning brief. AI features are intentionally out of scope.
+This repository is the `v0` implementation. It supports fast capture, simple listing, tag-based filtering, and a morning brief.
 
 ## Features
 
@@ -10,7 +10,7 @@ This repository is the `v0` implementation of the MVP. It focuses on fast captur
 - Save journals
 - Save tasks with optional due date and time
 - Filter by single tag
-- View a brief of overdue, today, and upcoming tasks
+- View a brief of overdue, today, and upcoming tasks, plus recent memos and journals
 
 ## Tech Stack
 
@@ -42,7 +42,7 @@ Build the package and link it globally:
 
 ```bash
 pnpm build
-pnpm link --global
+pnpm link --global .
 ```
 
 After that, you can run:

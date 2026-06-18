@@ -1,6 +1,6 @@
 # koko Data Model
 
-The current MVP uses a single `entries` table. Each row represents a memo, journal, or task.
+The current implementation uses a single `entries` table. Each row represents a memo, journal, or task.
 
 ## Entry Types
 
@@ -33,12 +33,10 @@ Rules:
 
 ## Tag Rules
 
-The MVP supports one tag per entry. Tags are stored directly on `entries.tag`.
+The current implementation supports one tag per entry. Tags are stored directly on `entries.tag`.
 
 `core/tag.ts` owns tag normalization:
 
 - trim whitespace
 - treat empty input as `undefined`
 - do not split comma-separated values
-
-If multiple tags are needed later, introduce a separate migration and move tags into a join table.

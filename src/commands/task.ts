@@ -25,7 +25,7 @@ export function createTaskCommand(): Command {
     .option("--t <time>", "Due time")
     .option("--today", "List today's tasks")
     .option("--week", "List this week's tasks")
-    .option("--all", "Include done and archived tasks")
+    .option("--all", "Include all task statuses")
     .action(async (body: string | undefined, options: Omit<TaskInput, "body">) => {
       await runTask({
         body,
